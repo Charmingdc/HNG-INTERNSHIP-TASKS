@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", Sans-Serif;
+  color: rgb(30, 30, 30);
+  padding: 1rem 5%;
+  background-color: rgb(240, 240, 245);
+}
+
+a,
+a:hover,
+a:visited {
+  color: rgb(100, 100, 230);
+  text-decoration: none;
+}
+
+main,
+header {
+  width: 100%;
+}
+
+article {
+  width: 92%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4%;
+  background-color: rgb(252, 252, 255);
+  border-radius: 1rem;
+}
+
+header,
+.profile-info,
+.profile-info section {
+  display: flex;
+  flex-direction: column;
+}
+
+#clock {
+  align-self: flex-end;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  background-color: rgb(230, 230, 230);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.display-picture {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.profile-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-about h2 {
+  font-size: 1.4rem;
+}
+.profile-about p {
+  width: 80%;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+#social-links-header {
+  margin-block: 2rem 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav a {
+  padding: 0.2rem 1rem;
+  background-color: rgb(230, 230, 230);
+  border-radius: 2rem;
+}
+
+#hobbies-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.hobby-group {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 6%;
+}
+
+.hobby-group h3 {
+  margin-bottom: 0.5rem;
+}
+
+.hobby-group ul {
+  width: 100%;
+  list-style: square;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.hobby-group li {
+  margin: 0.3rem 0;
+}
+
+@media (min-width: 726px) {
+  .display-picture {
+    width: 12rem;
+    height: 12rem;
+  }
+  .profile-info {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .profile-about {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #hobbies-section {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    margin-top: 4rem;
+  }
+
+  .hobby-group,
+  .hobby-group h3 {
+    align-items: flex-start;
+    text-align: left;
+  }
+}

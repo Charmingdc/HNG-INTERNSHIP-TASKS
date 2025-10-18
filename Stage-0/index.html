@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Muis Profile Card</title>
+    <meta
+      name="description"
+      content="My profile card submission for HNG Stage 0 task"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main aria-label="Main Content" role="main">
+      <article data-testid="test-profile-card">
+        <header>
+          <span id="clock" data-testid="test-user-time"></span>
+
+          <div aria-label="profile info" class="profile-info">
+            <figure>
+              <img
+                src="./assets/x-dp.png"
+                class="display-picture"
+                data-testid="test-user-avatar"
+                alt="Muis Avatar"
+              />
+            </figure>
+
+            <section aria-label="profile about" class="profile-about">
+              <h2 data-testid="test-user-name">Adebayo Muis</h2>
+              <p data-testid="test-user-bio">
+                Creative Frontend Developer • React, NextJs Expert • I build
+                clean, accessible and smooth web experiences.
+              </p>
+
+              <h3 id="social-links-header">Social Links</h3>
+              <nav
+                aria-label="social-links"
+                data-testid="test-user-social-links"
+              >
+                <a
+                  href="https://github.com/Charmingdc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://x.com/Charmingdc01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="https://linkedin.com/in/adebayo-muis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  Linkedin
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61554495275289"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-facebook"
+                >
+                  Facebook
+                </a>
+              </nav>
+            </section>
+          </div>
+        </header>
+
+        <section id="hobbies-section" aria-label="hobbies and dislikes">
+          <div class="hobby-group">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Drawing</li>
+              <li>Gaming</li>
+            </ul>
+          </div>
+
+          <div class="hobby-group">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow Network Connection</li>
+              <li>Bugs (both in code and in real life)</li>
+              <li>Disorganization</li>
+              <li>Procrastination</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script type="module" src="./main.js" defer></script>
+  </body>
+</html>
